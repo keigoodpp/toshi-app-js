@@ -33,7 +33,7 @@ function onMessage(session, message) {
 function onCommand(session, command) {
   switch (command.content.value) {
     case 'ping':
-      pongpang(session)
+      pong(session)
       break
     case 'count':
       count(session)
