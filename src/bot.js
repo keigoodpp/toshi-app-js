@@ -94,10 +94,15 @@ function donate(session) {
 
 function sendMessage(session, message) {
   let controls = [
+    {type: 'button', label: 'languageExchangePointを購入する', value: 'ping'},
+    {type: 'button', label: '保有ポイントを確認する', value: 'ping'},
+    {type: 'button', label: 'ラインで発音練習、録音する', value: 'count'},
     {type: 'button', label: '音声を登録する', value: 'ping'},
     {type: 'button', label: '登録音声を評価してもらう', value: 'ping'},
-    {type: 'button', label: 'ラインで録音する', value: 'count'},
-    {type: 'button', label: 'タスクに入札する', value: 'donate'}
+    {type: 'button', label: 'タスクに入札する', value: 'donate'},
+    {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
+    {type: 'button', label: 'ポイントを清算してethを獲得する', value: 'count'},
+    {type: 'button', label: 'setting', value: 'count'}
   ]
   session.reply(SOFA.Message({
     body: message,
