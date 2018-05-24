@@ -87,6 +87,7 @@ function donate(session) {
   // request $1 USD at current exchange rates
   Fiat.fetch().then((toEth) => {
     session.requestEth(toEth.JPY(100))
+    session.get('paymentAddress')
   })
 }
 
