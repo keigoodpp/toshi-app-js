@@ -102,7 +102,8 @@ function sendMessage(session, message) {
     {type: 'button', label: 'タスクに入札する', value: 'donate'},
     {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
     {type: 'button', label: 'ポイントを清算してethを獲得する', value: 'count'},
-    {type: 'button', label: 'setting', value: 'count'}
+    {type: 'button', label: 'setting', value: 'count'},
+    {type: 'text', label: 'setting', value: 'count'}
   ]
   session.reply(SOFA.Message({
     body: message,
