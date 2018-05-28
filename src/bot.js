@@ -101,10 +101,6 @@ function sendMessage(session, message) {
       controls: [
            {type: 'button', label: 'languageExchangePointを購入する', value: 'ping'},
     {type: 'button', label: '保有ポイントを確認する', value: 'ping'},
-        {type: "button", label: "Directions", value: "directions"},
-        {type: "button", label: "Timetable", value: "timetable"},
-        {type: "button", label: "Exit Info", value: "exit"},
-        {type: "button", label: "Service Conditions", value: "conditions"}
       ]}, 
     {
       type: "group",
@@ -113,15 +109,14 @@ function sendMessage(session, message) {
         {type: 'button', label: 'ラインで発音練習、録音する', value: 'count'},
     {type: 'button', label: '音声を登録する', value: 'ping'},
     {type: 'button', label: '登録音声を評価してもらう', value: 'ping'},
-        {type: "button", label: "Directions", value: "directions"},
-        {type: "button", label: "Timetable", value: "timetable"},
-        {type: "button", label: "Exit Info", value: "exit"},
-        {type: "button", label: "Service Conditions", value: "conditions"}
+        
       ]},
 {
       type: "group",
       label: "Trip",
       controls: [
+        {type: 'button', label: 'タスクに入札する', value: 'donate'},
+    {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
         {type: "button", label: "Directions", value: "directions"},
         {type: "button", label: "Timetable", value: "timetable"},
         {type: "button", label: "Exit Info", value: "exit"},
@@ -137,16 +132,9 @@ function sendMessage(session, message) {
         {type: "button", label: "Service Conditions", value: "conditions"}
       ]},
 
-    {type: 'button', label: 'languageExchangePointを購入する', value: 'ping'},
-    {type: 'button', label: '保有ポイントを確認する', value: 'ping'},
-    {type: 'button', label: 'ラインで発音練習、録音する', value: 'count'},
-    {type: 'button', label: '音声を登録する', value: 'ping'},
-    {type: 'button', label: '登録音声を評価してもらう', value: 'ping'},
-    {type: 'button', label: 'タスクに入札する', value: 'donate'},
-    {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
+   
     {type: 'button', label: 'ポイントを清算してethを獲得する', value: 'count'},
-    {type: 'button', label: 'setting', value: 'count'},
-    {type: 'text', label: 'setting', value: 'count'}
+    {type: 'button', label: 'setting', value: 'count'}
   ]
   session.reply(SOFA.Message({
     body: message,
