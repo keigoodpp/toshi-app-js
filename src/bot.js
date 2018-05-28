@@ -95,6 +95,15 @@ function donate(session) {
 
 function sendMessage(session, message) {
   let controls = [
+    {
+      type: "group",
+      label: "Trip",
+      controls: [
+        {type: "button", label: "Directions", value: "directions"},
+        {type: "button", label: "Timetable", value: "timetable"},
+        {type: "button", label: "Exit Info", value: "exit"},
+        {type: "button", label: "Service Conditions", value: "conditions"}
+      ]},
     {type: 'button', label: 'languageExchangePointを購入する', value: 'ping'},
     {type: 'button', label: '保有ポイントを確認する', value: 'ping'},
     {type: 'button', label: 'ラインで発音練習、録音する', value: 'count'},
