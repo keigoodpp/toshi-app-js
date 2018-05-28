@@ -142,3 +142,6 @@ function sendMessage(session, message) {
     showKeyboard: false,
   }))
 }
+
+var NCMB = require("ncmb");
+
