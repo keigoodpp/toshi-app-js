@@ -97,14 +97,14 @@ function sendMessage(session, message) {
   let controls = [
     {
       type: "group",
-      label: "Trip",
+      label: "point management",
       controls: [
            {type: 'button', label: 'languageExchangePointを購入する', value: 'ping'},
     {type: 'button', label: '保有ポイントを確認する', value: 'ping'},
       ]}, 
     {
       type: "group",
-      label: "Trip",
+      label: "implove your pronunciaton",
       controls: [
         {type: 'button', label: 'ラインで発音練習、録音する', value: 'count'},
     {type: 'button', label: '音声を登録する', value: 'ping'},
@@ -113,7 +113,7 @@ function sendMessage(session, message) {
       ]},
 {
       type: "group",
-      label: "Trip",
+      label: "work for eth",
       controls: [
         {type: 'button', label: 'タスクに入札する', value: 'donate'},
     {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
