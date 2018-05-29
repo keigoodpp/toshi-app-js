@@ -143,5 +143,4 @@ function sendMessage(session, message) {
   }))
 }
 
-var NCMB = require("ncmb");
 
