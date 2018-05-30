@@ -59,6 +59,7 @@ function onPayment(session, message) {
       // payment has been sent to the ethereum network, but is not yet confirmed
       sendMessage(session, `Thanks for the payment! 🙏`);
     } else if (message.status == 'confirmed') {
+      sendMessage(session, `Thanks thanks thanks`);
       // handle when the payment is actually confirmed!
     } else if (message.status == 'error') {
       sendMessage(session, `There was an error with your payment!🚫`);
