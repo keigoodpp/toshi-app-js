@@ -87,7 +87,7 @@ function count(session) {
 function donate(session) {
   // request $1 USD at current exchange rates
   Fiat.fetch().then((toEth) => {
-    session.requestEth(toEth.JPY(100))
+    session.requestEth(toEth.JPY(00))
     
   })
 }
@@ -105,7 +105,7 @@ function sendMessage(session, message) {
 
    
    
-        {type: 'button', label: 'タスクに入札する', value: 'donate'},
+        {type: 'button', label: 'Get 500 yen worth of LEE、５００円分のLEEを購入する', value: 'donate'},
     {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
         {type: 'button', label: 'setting', value: 'count'}
         ]},
