@@ -70,7 +70,7 @@ function onPayment(session, message) {
 // STATES
 
 function welcome(session) {
-  sendMessage(session, `Hello Token!`)
+  sendMessage(session, `Welcome ようこそ`)
 }
 
 function pong(session) {
