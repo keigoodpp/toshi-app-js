@@ -96,45 +96,18 @@ function donate(session) {
 
 function sendMessage(session, message) {
   let controls = [
-    {
-      type: "group",
-      label: "point management",
-      controls: [
-           {type: 'button', label: 'languageExchangePointを購入する', action: "Webview::https://keiichiro-yoshida.squarespace.com/new-page/"},
-    {type: 'button', label: '保有ポイントを確認する', value: 'ping'},
-      ]}, 
-    {
-      type: "group",
-      label: "implove your pronunciaton",
-      controls: [
-        {type: 'button', label: 'ラインで発音練習、録音する', value: 'count'},
-    {type: 'button', label: '音声を登録する', value: 'ping'},
-    {type: 'button', label: '登録音声を評価してもらう', value: 'ping'},
-        
-      ]},
+  
 {
       type: "group",
       label: "work for eth",
       controls: [
         {type: 'button', label: 'タスクに入札する', value: 'donate'},
-    {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
-        {type: "button", label: "Directions", value: "directions"},
-        {type: "button", label: "Timetable", value: "timetable"},
-        {type: "button", label: "Exit Info", value: "exit"},
-        {type: "button", label: "Service Conditions", value: "conditions"}
-      ]},
-{
-      type: "group",
-      label: "Trip",
-      controls: [
-        {type: "button", label: "Directions", value: "directions"},
-        {type: "button", label: "Timetable", value: "timetable"},
-        {type: "button", label: "Exit Info", value: "exit"},
-        {type: "button", label: "Service Conditions", value: "conditions"}
-      ]},
+    {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'}
+        ]},
+
 
    
-    {type: 'button', label: 'ポイントを清算してethを獲得する', value: 'count'},
+    {type: 'button', label: 'ポイントを清算してethを獲得する', action: "Webview::https://keiichiro-yoshida.squarespace.com/new-page/"},
     {type: 'button', label: 'setting', value: 'count'}
   ]
   session.reply(SOFA.Message({
