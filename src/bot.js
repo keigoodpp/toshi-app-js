@@ -73,6 +73,10 @@ function welcome(session) {
   sendMessage(session, `Welcome ようこそ`)
 }
 
+function Thanks(session) {
+  sendMessage(session, `thanks ありがとう`)
+}
+
 function pong(session) {
   sendMessage(session, session.get('paymentAddress'))
 }
