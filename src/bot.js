@@ -96,15 +96,15 @@ function donate(session) {
 
 function sendMessage(session, message) {
   let controls = [
-  
+ {type: 'button', label: 'Start to learn', action: "Webview::https://keiichiro-yoshida.squarespace.com/new-page/"},  
 {
       type: "group",
-      label: "work for eth",
+      label: "setting",
       controls: [
         
 
    
-    {type: 'button', label: 'Start to learn', action: "Webview::https://keiichiro-yoshida.squarespace.com/new-page/"},
+   
         {type: 'button', label: 'タスクに入札する', value: 'donate'},
     {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
         {type: 'button', label: 'setting', value: 'count'}
