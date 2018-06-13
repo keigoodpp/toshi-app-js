@@ -100,7 +100,7 @@ function sendMessage(session, message) {
       type: "group",
       label: "point management",
       controls: [
-           {type: 'button', label: 'languageExchangePointを購入する', action: "Webview::https://keiichiro-yoshida.squarespace.com"},
+           {type: 'button', label: 'languageExchangePointを購入する', action: "Webview::https://keiichiro-yoshida.squarespace.com/new-page/"},
     {type: 'button', label: '保有ポイントを確認する', value: 'ping'},
       ]}, 
     {
