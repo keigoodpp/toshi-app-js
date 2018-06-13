@@ -101,14 +101,16 @@ function sendMessage(session, message) {
       type: "group",
       label: "work for eth",
       controls: [
-        {type: 'button', label: 'タスクに入札する', value: 'donate'},
-    {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'}
-        ]},
-
+        
 
    
-    {type: 'button', label: 'ポイントを清算してethを獲得する', action: "Webview::https://keiichiro-yoshida.squarespace.com/new-page/"},
-    {type: 'button', label: 'setting', value: 'count'}
+    {type: 'button', label: 'Start to learn', action: "Webview::https://keiichiro-yoshida.squarespace.com/new-page/"},
+        {type: 'button', label: 'タスクに入札する', value: 'donate'},
+    {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
+        {type: 'button', label: 'setting', value: 'count'}
+        ]},
+
+    
   ]
   session.reply(SOFA.Message({
     body: message,
