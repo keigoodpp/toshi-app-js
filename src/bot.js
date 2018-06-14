@@ -71,6 +71,10 @@ function onPayment(session, message) {
 
 function welcome(session) {
   sendMessage(session, `Welcome ようこそ`)
+  let userID = ''+session.get('paymentAddress')
+let message = 'Hello!'
+
+bot.client.send(userID, message)
 }
 
 function Thanks(session) {
