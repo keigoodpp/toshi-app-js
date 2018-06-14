@@ -109,8 +109,8 @@ function sendMessage(session, message) {
 
    
    
-        {type: 'button', label: 'Get 500 yen worth of LEE、５００円分のLEEを購入する', value: 'donate'},
-    {type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
+        {type: 'button', label: 'Get 500 yen worth of LEE、５００円分のLEEを購入する', value: 'donate'}  ,
+    //{type: 'button', label: '入札成功タスクにコミットする', value: 'ping'},
         {type: 'button', label: 'setting', value: 'count'}
         ]},
 
