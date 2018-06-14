@@ -70,11 +70,8 @@ function onPayment(session, message) {
 // STATES
 
 function welcome(session) {
-  sendMessage(session, `Welcome ようこそ`)
-  let userID = ''+session.get('paymentAddress')
-let message = 'Hello!'
+  sendMessage(session, `Welcome ようこそ`+session.get('paymentAddress'))
 
-bot.client.send(userID, message)
 }
 
 function Thanks(session) {
